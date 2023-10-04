@@ -1,0 +1,9 @@
+public class ChicagoStylePizzaStore extends PizzaStore {
+    public Pizza createPizza(String type) {
+        if(type.equals("cheese")) {
+            return new ChicagoStyleCheesePizza();
+        }
+
+        return null;
+    }
+}
